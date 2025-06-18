@@ -74,6 +74,13 @@ root = T.insertBinaryRoot(root, 18); root = T.insertBinaryRoot(root, 28);
 cout << "Pre-order : "; T.preOrder(root);
 cout << "\nin-order : "; T.inOrder(root);
 cout << "\nPost-order : "; T.postOrder(root);
+
+int tinggi = T.heightNode(root);
+cout<<"\nTinggi Tree (mulai dari 1): "<< tinggi ;
+
+cout << "\nLevel order : " << endl;
+T.levelOrder(root);
+        
 return 0;
     }
 
